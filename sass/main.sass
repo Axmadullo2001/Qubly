@@ -1,0 +1,162 @@
+@import "vars"
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap')
+
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+	&:focus
+		outline: none
+
+*::-webkit-input-placeholder
+	color: $light-white
+	opacity: 1
+
+*:-moz-placeholder
+	color: $light-white
+	opacity: 1
+
+*::-moz-placeholder
+	color: $light-white
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $light-white
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $black
+body input:required:valid,
+body textarea:required:valid
+	color: $black
+
+html,body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+#top_banner
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	// height: 100vh
+img
+	max-width: 100%
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.btn_simple
+	border: 1px solid #722ED1
+	color: #722ED1
+	padding: 12px 24px
+	font-size: 14px
+	border-radius: 23px
+	text-decoration: none
+	transition: background .4s ease
+
+	&:hover
+		color: red
+		background-color: $accent
+		color: $light-accent
+
+#header
+	padding-top: 24px
+	.inner-header
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		.logo
+			display: block
+			width: 48px
+			height: 48px
+			>img
+				width: 100%
+		.right_slide_header
+			display: flex
+			.menu_top
+				display: flex
+				align-items: center
+				list-style: none
+				>li
+					margin-right: 40px
+					display: inline-block
+					>a
+						display: block
+						text-decoration: none
+						font-size: 14px
+						font-weight: 500
+						color: $black
+						transition: color .4s ease
+						&:hover
+							transition: .4s ease
+							color: $accent
+
+.main_banner
+	padding: 200px 0 30px
+	.mb_info
+		.notif
+			display: flex
+			background: #F7F1FF
+			padding: 8px 16px
+			max-width: 258px
+			border-radius: 20px
+			margin-bottom: 24px
+			p
+				padding-left: 12px
+				color: $accent
+				>a
+					text-decoration: none
+					color: $accent
+					border-bottom: 1px solid $accent
+					&:hover
+						color: darken($black, .5)
+						border-bottom: 1px solid darken($black, .5)
+
+		h1
+			font-size: 48px
+			line-height: 48px
+			font-weight: 700
+			color: $black
+		.descr
+			font-size: 16px
+			font-weight: 500
+			color: darken($black, .5)
+			margin: 24px 0
+
+		.btns
+			.btn
+				padding: 12px 24px
+				background: $accent
+				color: $white
+				text-decoration: none
+				border-radius: 23px
+				box-shadow: 0 3px 6px rgba(0, 0, 0, .6)
+				&:hover
+					background: #fff
+					color: $black
+				&.btn_white
+					background: $white
+					color: $accent
+					margin-left: 16px
+					&:hover
+						background: $accent
+						color: $white
+
