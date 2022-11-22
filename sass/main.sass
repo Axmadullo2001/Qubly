@@ -96,7 +96,8 @@ img
 				list-style: none
 				position: relative
 				>.has_sub_menu
-					margin-left: 5px
+					&:hover > .sub-menu
+						display: block
 					&::after
 						display: block
 						content: ''
@@ -104,13 +105,15 @@ img
 						height: 6px
 						position: absolute
 						top: 22px
-						left: -11px
+						left: 45px
 						background: url(../img/main_banner/path.svg)
+						animation: opac .5s alternate infinite
+
 				>li
-					margin-right: 40px
 					display: inline-block
 					list-style: none
 					a
+						padding: 5px 40px 4px 0
 						display: block
 						text-decoration: none
 						font-size: 14px
@@ -121,10 +124,13 @@ img
 							transition: .4s ease
 							color: $accent
 					>.sub-menu
+						z-index: 10
 						position: absolute
-						top: 40px
+						width: 120px
+						padding: 0px 22px
 						background-color: $white
-						box-shadow: 0 3px 6px rgba(0, 0, 0, .6)
+						box-shadow: 0 3px 5px rgba(0, 0, 0, .6)
+						display: none
 						li
 							list-style: none
 							padding: 2px 0
@@ -178,4 +184,3 @@ img
 					&:hover
 						background: $accent
 						color: $white
-

@@ -116,8 +116,8 @@ img {
   list-style: none;
   position: relative;
 }
-#header .inner-header .right_slide_header .menu_top > .has_sub_menu {
-  margin-left: 5px;
+#header .inner-header .right_slide_header .menu_top > .has_sub_menu:hover > .sub-menu {
+  display: block;
 }
 #header .inner-header .right_slide_header .menu_top > .has_sub_menu::after {
   display: block;
@@ -126,15 +126,16 @@ img {
   height: 6px;
   position: absolute;
   top: 22px;
-  left: -11px;
+  left: 45px;
   background: url(../img/main_banner/path.svg);
+  animation: opac 0.5s alternate infinite;
 }
 #header .inner-header .right_slide_header .menu_top > li {
-  margin-right: 40px;
   display: inline-block;
   list-style: none;
 }
 #header .inner-header .right_slide_header .menu_top > li a {
+  padding: 5px 40px 4px 0;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -147,10 +148,13 @@ img {
   color: #722ED1;
 }
 #header .inner-header .right_slide_header .menu_top > li > .sub-menu {
+  z-index: 10;
   position: absolute;
-  top: 40px;
+  width: 120px;
+  padding: 0px 22px;
   background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  display: none;
 }
 #header .inner-header .right_slide_header .menu_top > li > .sub-menu li {
   list-style: none;
