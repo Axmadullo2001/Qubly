@@ -164,6 +164,28 @@ img {
   padding: 2px 0;
 }
 
+.notif {
+  display: flex;
+  background: #F7F1FF;
+  padding: 8px 16px;
+  max-width: max-content;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+.notif p {
+  padding-left: 12px;
+  color: #722ED1;
+}
+.notif p > a {
+  text-decoration: none;
+  color: #722ED1;
+  border-bottom: 1px solid #722ED1;
+}
+.notif p > a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
 @keyframes opac {
   from {
     opacity: 0;
@@ -174,27 +196,6 @@ img {
 }
 .main_banner {
   padding: 200px 0 30px;
-}
-.main_banner .mb_info .notif {
-  display: flex;
-  background: #F7F1FF;
-  padding: 8px 16px;
-  max-width: 258px;
-  border-radius: 20px;
-  margin-bottom: 24px;
-}
-.main_banner .mb_info .notif p {
-  padding-left: 12px;
-  color: #722ED1;
-}
-.main_banner .mb_info .notif p > a {
-  text-decoration: none;
-  color: #722ED1;
-  border-bottom: 1px solid #722ED1;
-}
-.main_banner .mb_info .notif p > a:hover {
-  color: black;
-  border-bottom: 1px solid black;
 }
 .main_banner .mb_info h1 {
   font-size: 48px;
@@ -228,4 +229,77 @@ img {
 .main_banner .mb_info .btns .btn.btn_white:hover {
   background: #722ED1;
   color: white;
+}
+
+#advantages {
+  padding-top: 112px;
+  padding-bottom: 120px;
+}
+#advantages .notif {
+  margin: 0 auto 24px;
+  max-width: max-content;
+}
+#advantages h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #160637;
+}
+#advantages .text_content {
+  max-width: 672px;
+  color: #8989A2;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 24px;
+}
+#advantages .item_adv .heading {
+  color: #160637;
+  font-weight: 700;
+  text-align: center;
+  margin: 16px 0;
+}
+#advantages .item_adv img {
+  display: block;
+  margin: auto;
+}
+#advantages .item_adv .descr {
+  text-align: start;
+  max-width: 315px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #8989A2;
+}
+
+#info_1 .notif > p {
+  color: #722ED1;
+}
+#info_1 h3 {
+  font-size: 32px;
+  margin: 24px 0;
+  line-height: 40px;
+}
+#info_1 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8989A2;
+}
+
+#info_2 {
+  padding-top: 224px;
+  padding-bottom: 22px;
+}
+#info_2 .notif > p {
+  color: #722ED1;
+}
+#info_2 h3 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+#info_2 p {
+  color: #8989A2;
+  line-height: 24px;
+  font-size: 16px;
 }

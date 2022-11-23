@@ -136,6 +136,24 @@ img
 							list-style: none
 							padding: 2px 0
 
+.notif
+		display: flex
+		background: #F7F1FF
+		padding: 8px 16px
+		max-width: max-content
+		border-radius: 20px
+		margin-bottom: 24px
+		p
+			padding-left: 12px
+			color: $accent
+			>a
+				text-decoration: none
+				color: $accent
+				border-bottom: 1px solid $accent
+				&:hover
+					color: darken($black, .5)
+					border-bottom: 1px solid darken($black, .5)
+
 @keyframes opac
 	from
 		opacity: 0
@@ -146,23 +164,6 @@ img
 .main_banner
 	padding: 200px 0 30px
 	.mb_info
-		.notif
-			display: flex
-			background: #F7F1FF
-			padding: 8px 16px
-			max-width: 258px
-			border-radius: 20px
-			margin-bottom: 24px
-			p
-				padding-left: 12px
-				color: $accent
-				>a
-					text-decoration: none
-					color: $accent
-					border-bottom: 1px solid $accent
-					&:hover
-						color: darken($black, .5)
-						border-bottom: 1px solid darken($black, .5)
 
 		h1
 			font-size: 48px
@@ -193,3 +194,67 @@ img
 					&:hover
 						background: $accent
 						color: $white
+
+
+#advantages
+	padding-top: 112px
+	padding-bottom: 120px
+	.notif
+		margin: 0 auto 24px
+		max-width: max-content
+	h2
+		text-align: center
+		font-size: 32px
+		line-height: 40px
+		font-weight: 700
+		margin-bottom: 24px
+		color: $title-color
+	.text_content
+		max-width: 672px
+		color: $grey
+		text-align: center
+		margin: auto
+		margin-bottom: 24px
+
+	.item_adv
+		.heading
+			color: $title-color
+			font-weight: 700
+			text-align: center
+			margin: 16px 0
+		img
+			display: block
+			margin: auto
+
+		.descr
+			text-align: start
+			max-width: 315px
+			line-height: 24px
+			font-size: 16px
+			color: $grey
+
+#info_1
+	.notif > p
+		color: $accent
+	h3
+		font-size: 32px
+		margin: 24px 0
+		line-height: 40px
+	p
+		font-size: 16px
+		line-height: 24px
+		color: $grey
+
+#info_2
+	padding-top: 224px
+	padding-bottom: 22px
+	.notif > p
+		color: $accent
+	h3
+		font-size: 30px
+		line-height: 40px
+		margin-bottom: 24px
+	p
+		color: $grey
+		line-height: 24px
+		font-size: 16px
