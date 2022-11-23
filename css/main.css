@@ -321,7 +321,7 @@ img {
 }
 
 #info_2 {
-  padding-top: 224px;
+  padding-top: 100px;
   padding-bottom: 22px;
 }
 #info_2 .notif > p {
@@ -336,4 +336,76 @@ img {
   color: #8989A2;
   line-height: 24px;
   font-size: 16px;
+}
+
+#reviews {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/testimonial/background.svg");
+}
+#reviews #rev1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#reviews #rev1 .quotes {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 964px;
+  margin-bottom: 32px;
+  padding-top: 240px;
+  color: #160637;
+}
+#reviews #rev1 > p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+#reviews .nav_rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  padding-top: 36px;
+  padding-bottom: 187px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#reviews .nav_rev > div {
+  cursor: pointer;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#reviews .nav_rev > div:hover, #reviews .nav_rev > div.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.position::after {
+  display: block;
+  content: "";
+  width: 964px;
+  z-index: 10;
+  height: 1px;
+  background-color: #DEC9FA;
+  margin-top: 32px;
 }

@@ -246,7 +246,7 @@ img
 		color: $grey
 
 #info_2
-	padding-top: 224px
+	padding-top: 100px
 	padding-bottom: 22px
 	.notif > p
 		color: $accent
@@ -258,3 +258,57 @@ img
 		color: $grey
 		line-height: 24px
 		font-size: 16px
+
+#reviews
+	background-position: center
+	background-size: cover
+	background-image: url('../img/testimonial/background.svg')
+	#rev1
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		.quotes
+			font-size: 24px
+			line-height: 32px
+			font-weight: 500
+			text-align: center
+			max-width: 964px
+			margin-bottom: 32px
+			padding-top: 240px
+			color: $title-color
+
+		>p
+			color: $black
+			font-size: 16px
+			font-weight: 700
+			text-align: center
+
+	.nav_rev
+		display: flex
+		justify-content: space-around
+		margin: auto
+		padding-top: 36px
+		padding-bottom: 187px
+		flex-wrap: wrap
+		>div
+			cursor: pointer
+			filter: grayscale(1)
+			transition: all .4s ease
+			&:hover, &.active
+				filter: grayscale(0)
+				transform: scale(1.1)
+
+.position
+	&::after
+		display: block
+		content: ''
+		width: 964px
+		z-index: 10
+		height: 1px
+		background-color: $border-color
+		margin-top: 32px
+
+
+
+
