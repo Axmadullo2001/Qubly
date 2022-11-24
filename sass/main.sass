@@ -162,7 +162,7 @@ img
 		opacity: 1
 
 .main_banner
-	padding: 200px 0 30px
+	padding: 100px 0 200px
 	.mb_info
 
 		h1
@@ -194,7 +194,6 @@ img
 					&:hover
 						background: $accent
 						color: $white
-
 
 #advantages
 	padding-top: 112px
@@ -232,8 +231,9 @@ img
 			line-height: 24px
 			font-size: 16px
 			color: $grey
+			margin: auto
 
-#info_1
+#inf_1
 	.notif > p
 		color: $accent
 	h3
@@ -278,6 +278,9 @@ img
 			padding-top: 240px
 			color: $title-color
 
+		img
+			margin-bottom: 32px
+
 		>p
 			color: $black
 			font-size: 16px
@@ -288,11 +291,13 @@ img
 		display: flex
 		justify-content: space-around
 		margin: auto
+		align-items: center
 		padding-top: 36px
 		padding-bottom: 187px
 		flex-wrap: wrap
 		>div
 			cursor: pointer
+			width: 10%
 			filter: grayscale(1)
 			transition: all .4s ease
 			&:hover, &.active
@@ -309,6 +314,167 @@ img
 		background-color: $border-color
 		margin-top: 32px
 
+.form
+	padding-top: 180px
+	h3
+		width: 431px
+		font-weight: 700
+		font-size: 32px
+		line-height: 40px
+		margin-bottom: 35px
+	p.trusted
+		font-size: 16px
+		color: $grey
+		line-height: 24px
+		font-weight: 500
+		display: flex
+		padding: 0 10px
+		margin-bottom: 50px
+		&::before
+			content: ''
+			display: block
+			width: 150px
+			height: 1px
+			background: #D6D6D6
+			margin-right: 10px
+			margin-top: 12px
+		&::after
+			content: ''
+			display: block
+			width: 150px
+			height: 1px
+			background: #D6D6D6
+			margin-left: 10px
+			margin-top: 12px
 
+	div img
 
+		margin: 35px 55px 35px 25px
 
+.auth
+	background-color: #fff
+	max-width: 428px
+	display: flex
+	flex-direction: column
+	-webkit-box-shadow: 0px 18px 0px 24px rgba(249, 240, 255, 1)
+	-moz-box-shadow: 0px 18px 0px 24px rgba(249, 240, 255, 1)
+	box-shadow: 0px 18px 0px 24px rgba(249, 240, 255, 1)
+	padding: 20px
+	margin-bottom: 170px
+	h2
+		font-size: 24px
+		line-height: 32px
+		font-weight: 700
+		margin-bottom: 16px
+		text-align: center
+		margin-top: 10px
+	.start_free_trial
+		padding: 12px 98px
+		font-size: 16px
+		line-height: 24px
+		text-decoration: none
+		background-color: $accent
+		text-align: center
+		color: $white
+		border-radius: 8px
+		margin-bottom: 10px
+	form
+		display: flex
+		flex-direction: column
+		input
+			margin: 8px 0
+			padding: 16px 20px
+			border: 1px solid $silver
+			border-radius: 8px
+			&::placeholder
+				color: $grey
+				font-size: 16px
+				line-height: 16px
+	.or
+		font-size: 16px
+		line-height: 16px
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		color: $black
+		text-shadow: 1px 1px 1px $black
+		margin-top: 10px
+	div
+		margin: 0px auto
+		cursor: pointer
+
+	.line
+		width: 336px
+		height: 1px
+		background-color: $grey
+
+	.has_acc
+		text-align: center
+		color: $grey
+		margin-top: 16px
+		a
+			text-decoration: none
+			color: $accent
+
+#footer
+	padding-bottom: 24px
+	padding-top: 58px
+	background-color: $bg-footer
+	.lorem_text
+		margin-top: 14px
+
+	.logo
+		margin-bottom: 20px
+
+	h3
+		font-size: 15px
+		margin-bottom: 20px
+
+	.social_media
+		margin-top: 24px
+		a:nth-child(1)
+			padding-left: 0
+		a
+			text-decoration: none
+			padding-left: 10px
+	.central_block
+		display: flex
+		>div
+			margin: 0 25px
+
+	ul
+		list-style: none
+		li > a
+			text-decoration: none
+			color: $title-color
+	.newsletter
+		position: relative
+		.email_send
+			padding: 12px 6px 16px 16px
+			background-color: $white
+			box-shadow: 0 1px 2px #59595999
+			border: none
+		.send_telegram
+			position: absolute
+			width: 20px
+			height: 20px
+			right: 8px
+			top: 56px
+			cursor: pointer
+	.author_rights
+		color: $title-color
+		font-size: 16px
+		font-weight: 700
+		line-height: 16px
+		img
+			margin-left: 5px
+
+	a:hover
+		color: $accent
+
+@media screen and ( max-width: 530px )
+	.auth
+		margin: auto
+
+	.form_block
+		margin: auto

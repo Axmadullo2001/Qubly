@@ -22,9 +22,8 @@
 	<meta name="msapplication-navbutton-color" content="#722ED1">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#722ED1">
-	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/adaptive.css">
-
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<section id="top_banner" style="background-image: url('./img/main_banner/background.jpg')">
@@ -130,8 +129,8 @@
 
 	<section id="info_1" class="information">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-6 col-md-5">
 					<img src="./img/information/info_img_1.svg" class="img-responsive" alt="">
 				</div>
 
@@ -150,17 +149,19 @@
 
 	<section id="info_2" class="information">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-5">
-					<div class="notif">
-						<img src="./img/information/compas.svg" alt="">
-						<p>For Engineering Teams</p>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-3">
+					<div class="banner_item">
+						<div class="notif">
+							<img src="./img/information/compas.svg" alt="">
+							<p>For Engineering Teams</p>
+						</div>
+						<h3>Data-driven pipelines in minutes</h3>
+						<p>Maintenance-free data pipelines with quick set-up and straight-forward deployments that are powered by a modern & scalable platform.</p>
 					</div>
-					<h3>Data-driven pipelines in minutes</h3>
-					<p>Maintenance-free data pipelines with quick set-up and straight-forward deployments that are powered by a modern & scalable platform.</p>
 				</div>
 				<div class="col-lg-5">
-					<img src="./img/information/banner.png" alt="">
+					<img src="./img/information/banner.png" alt="" id="info_banner">
 				</div>
 			</div>
 		</div>
@@ -188,7 +189,7 @@
 				<div data-revid="rev_2">
 					<img src="./img/testimonial/brand_2.svg" alt="">
 				</div>
-				<div data-revid="rev_3">
+				<div data-revid="rev_3" class="active">
 					<img src="./img/testimonial/brand_3.svg" alt="">
 				</div>
 				<div data-revid="rev_4">
@@ -200,6 +201,136 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="form">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="form_block">
+						<h3>
+							See why the world’s best companies use Qubly to become truly data-driven.
+						</h3>
+						<p class="trusted">Trusted by</p>
+						<div>
+							<img src="./img/forma/icon1.svg" alt="icon1">
+							<img src="./img/forma/icon2.svg" alt="icon2">
+							<img src="./img/forma/icon3.svg" alt="icon3">
+							<img src="./img/forma/icon4.svg" alt="icon4">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="auth">
+						<h2>Sign Up</h2>
+						<a href="" class="start_free_trial">Start your free trial</a>
+						<form>
+							<input type="email" name="email" id="email" placeholder="Your primary email">
+							<input type="password" name="password" id="password"
+							placeholder="Password">
+							<input type="password" name="repeat_password" id="repeat_password"
+							placeholder="Re-type Password">
+						</form>
+						<p class="or">or</p>
+						<div>
+							<img src="./img/forma/google_form_icon.svg" alt="">
+						</div>
+						<div class="line"></div>
+						<p class="has_acc">Already have an account? <a href="">Login</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer"	>
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-3">
+					<a href="" class="logo">
+						<img src="./img/logo.svg" alt="">
+					</a>
+					<p class="lorem_text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim
+					</p>
+					<div class="social_media">
+						<a href="">
+							<img src="./img/footer/facebook.svg" alt="">
+						</a>
+
+						<a href="">
+							<img src="./img/footer/twitter.svg" alt="">
+						</a>
+
+						<a href="">
+							<img src="./img/footer/instagram.svg" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-9 central_block" id="central_block-footer">
+					<div>
+						<h3>Product</h3>
+						<ul>
+							<li><a href="">Connections</a></li>
+							<li><a href="">Protocols</a></li>
+							<li><a href="">Personas</a></li>
+							<li><a href="">Integrations</a></li>
+							<li><a href="">Catalog</a></li>
+							<li><a href="">Pricing</a></li>
+							<li><a href="">Security</a></li>
+							<li><a href="">GDPR</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>For Developers</h3>
+						<ul>
+							<li><a href="">Docs</a></li>
+							<li><a href="">API</a></li>
+							<li><a href="">Open Source</a></li>
+							<li><a href="">Engineering Team</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>Company</h3>
+						<ul>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Press</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>Support</h3>
+						<ul>
+							<li><a href="">Help Center</a></li>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">Security</a></li>
+							<li><a href="">Bulletins</a></li>
+							<li><a href="">Documentation</a></li>
+							<li><a href="">Partner</a></li>
+							<li><a href="">Portal</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<h3>Newsletter</h3>
+						<input type="email" placeholder="Email" class="email_send">
+						<img src="./img/footer/send.svg" alt="email" class="send_telegram">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-center author_rights">
+			<p>Rahul Rao</p>
+			<img src="./img/footer/author.svg" width="20" height="20" alt="author">
+		</div>
+	</footer>
+
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/jquery.fancybox.min.js"></script>
